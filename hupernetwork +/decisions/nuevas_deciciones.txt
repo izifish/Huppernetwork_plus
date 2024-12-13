@@ -60,6 +60,56 @@ political_decisions = {
 		}
 	}
 	
+	usa_can = {
+		picture = patagonian_expedition
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = USA_CAN
+			}
+		}
+		
+		allow = {
+		  owns = 57
+		}
+		
+		effect = {
+			set_country_flag = USA_CAN
+			add_accepted_culture = anglo_canadian
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	usa_mex = {
+		picture = patagonian_expedition
+		potential = {
+			tag = USA
+			NOT = {
+				has_country_flag = USA_MEX
+			}
+		}
+		
+		allow = {
+		    USA = {
+			    all_core = {owned_by = THIS}
+			}
+			owns = 2172
+		}
+		
+		effect = {
+		    MEX = { all_core = { add_core = USA } }
+			set_country_flag = USA_MEX
+			add_accepted_culture = mexican
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	mck_jap = {
 		picture = patagonian_expedition
 		potential = {
@@ -682,7 +732,7 @@ aragoitaly = {
 				    add_core = SPA
 				}
 			}
-			TUS = {
+			BEL = {
 				all_core = {
 				    add_core = SPA
 				}

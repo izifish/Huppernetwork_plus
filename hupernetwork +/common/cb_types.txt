@@ -259,14 +259,13 @@ conquest = {
 	crisis = no
 	
 	can_use = {
+		 
+		# only one state or unciv
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
 		NOT = { tag = CHI }
-		total_pops = 400000
-		this = { NOT = { badboy = 1 } }
-		NOT = { is_our_vassal = THIS }
-		# only one state or unciv
 		NOT = { number_of_states = 5 }
+	    this = { NOT = { badboy = 1 } }
 		NOT = { 
 			OR = { 
 				has_country_modifier = neutrality
@@ -283,26 +282,23 @@ conquest = {
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
-		NOT = { has_country_flag = conquerable_1865 }
+		
+		is_greater_power = no
+		THIS = {
+		    OR = {
+			    civilized = yes
+			    civilized = no
+			}
+		}
 		OR = {
 			AND = {
 				civilized = yes
-				NOT = { number_of_states = 2 }
+				NOT = { number_of_states = 5 }
 			}
 			AND = {
+			    THIS = {civilized = no}
 				civilized = no
-				THIS = { civilized = no }
-				NOT = { number_of_states = 2 }
-			}
-			AND = {
-				civilized = no
-				number_of_states = 2
-				THIS = {
-					OR = {
-						NOT = { is_greater_power = yes }
-						NOT = { nationalism_n_imperialism = 1 }
-					}
-				}
+				NOT = { number_of_states = 5 }
 			}
 		}
 	}
@@ -3089,20 +3085,6 @@ humiliate = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
 		this = { NOT = { badboy = 1 } }
-		NOT = { 
-			OR = { 
-				has_country_modifier = neutrality
-				has_country_modifier = generic_neutrality
-			}
-		}
-		THIS = { NOT = {
-				OR = {
-					has_country_modifier = neutrality
-					has_country_modifier = generic_neutrality
-				}
-			 } 
-		}
-		has_recently_lost_war = no
 	}	
 	on_add = {
 		move_issue_percentage = { 
