@@ -1,11 +1,8 @@
 capital = 605
 primary_culture = french
-accepted_culture =
-{
-north_german
-south_german
-north_italian
-}
+culture = north_german
+culture = south_german
+culture = north_italian
 religion = placeholder
 government = democracy
 plurality = 25.0
