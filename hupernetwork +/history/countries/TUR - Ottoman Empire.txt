@@ -1,11 +1,9 @@
 capital = 860
 primary_culture = turkish
-culture = misri
-culture = mashriqi
-culture = bulgarian
 culture = bosniak
-culture = kurdish
 culture = albanian
+culture = tartar
+culture = north_caucasian
 religion = placeholder
 government = absolute_monarchy
 plurality = 25.0
