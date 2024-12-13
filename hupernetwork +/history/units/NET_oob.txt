@@ -1,118 +1,109 @@
 leader = {
-	name = "David Hendrik Chassé"
-	picture = net_gen_chasse
+	name = "David ChassÃ©"
 	date = 1806.1.1
+	type = land
+	personality = defence_3.1
+	background = attack_3.1
+	prestige = 0.3
+}
+
+leader = {
+	name = "Frans Cochius"
+	date = 1830.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0.1
 }
+
+leader = {
+	name = "Vixo el boliviano"
+	date = 1836.1.1
+	type = sea
+	personality = defence_3.1
+	background = attack_3.1
+	prestige = 0.0
+}
+
 leader = {
 	name = "Hendrik de Kock"
-	picture = net_gen_kock
 	date = 1807.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
 	prestige = 0.3
 }
+
 leader = {
-	name = "Dominique Jacques de Eerens"
-	picture = net_gen_eerens
-	date = 1815.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Prince Willem"
-	picture = net_gen_prinswillem
-	date = 1815.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Duke Karel Bernhard"
-	picture = net_gen_hertogkarelbernhard
-	date = 1815.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Prins Frederik"
-	picture = net_gen_prinsfrederik
-	date = 1825.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Karel Duycker"
-	picture = net_gen_duycker
+	name = "van den Bosch"
 	date = 1827.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.2
+	prestige = 0.1
 }
+
 leader = {
-	name = "Johannes van den Bosch"
-	picture = net_gen_bosch
-	date = 1827.1.1
+	name = "Dominique de Eerens"
+	date = 1815.1.1
 	type = land
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_2.1
 	prestige = 0.2
 }
+
 leader = {
-	name = "Frans David Cochius"
-	picture = net_gen_cochius
+	name = "Frederik List"
 	date = 1830.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
 	prestige = 0.1
 }
-leader = {
-	name = "Fredrik Karel List"
-	picture = net_gen_list
-	date = 1830.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
-}
+
 leader = {
 	name = "Engelbertus Lucas"
-	picture = net_adm_lucas
 	date = 1830.1.1
 	type = sea
 	personality = defence_1.1
 	background = attack_1.1
 	prestige = 0.1
 }
+
 leader = {
 	name = "Charles Nepveu"
-	picture = net_gen_nepveu
 	date = 1831.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
+	prestige = 0.0
+}
+
+leader = {
+	name = "Karel Bernhard van Saksen-Weimar"
+	date = 1815.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Hendrik Duycker"
+	date = 1827.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
+
 leader = {
-	name = "Julius Constantijn Rijk"
-	picture = net_adm_rijk
+	name = "Julius Rijk"
 	date = 1836.1.1
 	type = sea
 	personality = defence_1.1
 	background = attack_1.1
+	prestige = 0.0
 }
 
 army = {
