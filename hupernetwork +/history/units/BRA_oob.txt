@@ -14,6 +14,7 @@ leader = {
 	type = land
 	personality = defence_-1.1
 	background = attack_3.1
+}
 
 
 army = {
