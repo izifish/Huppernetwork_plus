@@ -3085,6 +3085,20 @@ humiliate = {
 		NOT = { tag = LCT }
 		NOT = { tag = GHO }
 		this = { NOT = { badboy = 1 } }
+		NOT = { 
+			OR = { 
+				has_country_modifier = neutrality
+				has_country_modifier = generic_neutrality
+			}
+		}
+		THIS = { NOT = {
+				OR = {
+					has_country_modifier = neutrality
+					has_country_modifier = generic_neutrality
+				}
+			 } 
+		}
+		has_recently_lost_war = no
 	}	
 	on_add = {
 		move_issue_percentage = { 
