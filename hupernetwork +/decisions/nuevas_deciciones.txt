@@ -399,34 +399,6 @@ aragoitaly = {
 			add_accepted_culture=british
 		}
 	}
-	
-	moros_con = {
-		picture = patagonian_expedition
-		potential = {
-			 OR = {
-				tag = POR
-				tag = PBA
-				tag = SPA
-			}
-			NOT = {
-				has_country_flag = moros
-			}
-		}
-		
-		allow = {
-				owns = 1680
-		}
-		
-		effect = {
-			set_country_flag = moros
-			add_accepted_culture = maghrebi
-			add_accepted_culture = berber
-			MOR = { all_core = { add_core = THIS } }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	claim_the_escosia = {
 		picture = escosia
@@ -698,7 +670,6 @@ aragoitaly = {
 		}
 		allow = {
 			war = no
-			nationalism_n_imperialism = 1
 			owns = 754
 			owns = 757
 			owns = 761
@@ -707,6 +678,11 @@ aragoitaly = {
 		}
 		effect = {
 			SIC = {
+				all_core = {
+				    add_core = SPA
+				}
+			}
+			BEL = {
 				all_core = {
 				    add_core = SPA
 				}
@@ -1755,3 +1731,374 @@ form_persianempire = {
 		}
 	}
 	
+	the_viceroyalty_of_vng = {
+		picture = viceroyalty_of_granada
+		potential = {
+			tag = SPA
+			
+			NOT = { has_country_flag = vng_established }
+		}
+		
+		allow = {
+			OR = {
+			     AND = {
+		     OR = {
+			     GCO = {OR={vassal_of = THIS in_sphere = THIS}}
+				 AND = {
+				     NOT={exists=PNM}
+				     CLM = {OR={vassal_of = THIS in_sphere = THIS}}
+				     ECU = {OR={vassal_of = THIS in_sphere = THIS}}
+				     VNZ = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+				     exists=PNM
+				     PNM = {OR={vassal_of = THIS in_sphere = THIS}}
+					 CLM = {OR={vassal_of = THIS in_sphere = THIS}}
+				     ECU = {OR={vassal_of = THIS in_sphere = THIS}}
+				     VNZ = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+			 }
+				 }
+				 AND = {
+					  GCO = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+			}
+		}
+		
+		effect = {
+		inherit = ECU
+		inherit = VNZ
+		inherit = CLM
+		inherit = GCO
+			prestige = 20
+			ECU = {
+				all_core = {
+					add_core = GCO
+				}
+				annex_to = THIS
+			}
+			VNZ = {
+				all_core = {
+					add_core = GCO
+				}
+				annex_to = THIS
+			}
+			CLM = {
+				all_core = {
+					add_core = GCO
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = GCO }
+					vassal_of = THIS
+					exists = yes
+				}
+				annex_to = THIS
+			}
+			GCO = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+						}
+					}
+					secede_province = VNG
+					add_core = VNG
+				}
+			}
+			create_vassal = VNG
+			relation = { who = USA value = -20 }
+			set_country_flag = vng_established
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_viceroyalty_of_vdp = {
+		picture = viceroyalty_of_peru
+		potential = {
+			tag = SPA
+			
+			NOT = { has_country_flag = vdp_established }
+		}
+		
+		allow = {
+        OR = {
+			     AND = {
+				      PEU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  CHL = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+					  CHL = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  PEU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+					  CHL = {all_core = {OR={vassal_of = THIS in_sphere = THIS}}}
+					  PEU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+					  CHL = {all_core = {OR={vassal_of = THIS in_sphere = THIS}}}
+					  PEU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+			     PBC = {OR={vassal_of = THIS in_sphere = THIS}}
+			}
+		}
+		
+		effect = {
+			prestige = 15
+			inherit = PEU
+			inherit = CHL
+			inherit = PBC
+			PEU = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+						}
+					}
+					secede_province = VDP
+					add_core = VDP
+					add_core = PBC
+				}
+			}
+			CHL = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+						}
+					}
+					secede_province = VDP
+					add_core = VDP
+				}
+			}
+			create_vassal = VDP
+			relation = { who = USA value = -15 }
+			set_country_flag = vdp_established
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_viceroyalty_of_nsp = {
+		picture = new_spain
+		potential = {
+			tag = SPA
+			
+			NOT = { has_country_flag = vns_established }
+		}
+		
+		allow = {
+			 OR={
+			MEX = {OR={vassal_of = THIS in_sphere = THIS}}
+			MEX = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+			}
+			OR = {
+			     AND = {
+			OR = {
+			     UCA = {OR={vassal_of = THIS in_sphere = THIS}}
+				 AND = {
+				     GUA = {OR={vassal_of = THIS in_sphere = THIS}}
+				     ELS = {OR={vassal_of = THIS in_sphere = THIS}}
+				     HON = {OR={vassal_of = THIS in_sphere = THIS}}
+				     NIC = {OR={vassal_of = THIS in_sphere = THIS}}
+				     COS = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+			}
+				 }
+				 AND = {
+					  UCA = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+			}
+		}
+		
+		effect = {
+			inherit = UCA
+			inherit = MEX
+			any_country = {
+				limit = {
+					OR = {
+						tag = MEX
+						tag = UCA
+					}
+					exists = yes
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			MEX = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+						}
+					}
+					secede_province = VNS
+					add_core = VNS
+				}
+			}
+			UCA = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+						}
+					}
+					secede_province = VNS
+					add_core = VNS
+				}
+			}
+			create_vassal = VNS
+			relation = { who = USA value = -50 }
+			set_country_flag = vns_established
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_viceroyalty_of_vrp = {
+		picture = viceroyalty_of_plata
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = vrp_established }
+		}
+		
+		allow = {
+			OR = {
+			     AND = {
+				      CHL = {OR={vassal_of = THIS in_sphere = THIS}}
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+					  PRG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  URU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  ARG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+				      
+					  PRG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  URU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+					 
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+				     
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  ARG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+					 
+					  PRG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+				     
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+				 }
+				 AND = {
+				   
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+				      
+					  PRG = {all_core = {owner={OR={tag = THIS vassal_of = THIS in_sphere = THIS}}}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+				 AND = {
+					 
+					  PRG = {OR={vassal_of = THIS in_sphere = THIS}}
+					  URU = {OR={vassal_of = THIS in_sphere = THIS}}
+					  ARG = {OR={vassal_of = THIS in_sphere = THIS}}
+				 }
+			}
+		}
+		
+		effect = {
+			inherit = ARG
+			inherit = PRG
+			inherit = URU
+			inherit = BOL
+			prestige = 15
+			any_country = {
+				limit = {
+					OR = {
+						tag = BOL
+						tag = ARG
+						tag = PRG
+						tag = URU
+					}
+					exists = yes
+					vassal_of = THIS
+				}
+				annex_to = THIS
+				all_core = {
+					secede_province = VRP
+					add_core = VRP
+				}
+			}
+			BOL = {
+				all_core = {			
+					add_core = PBC
+					secede_province = VRP
+					add_core = VRP
+				}
+			}
+			ARG = {
+				all_core = {
+					secede_province = VRP
+					add_core = VRP
+				}
+			}
+			PRG = {
+				all_core = {
+					secede_province = VRP
+					add_core = VRP
+				}
+			}
+			URU = {
+				all_core = {
+					secede_province = VRP
+					add_core = VRP
+				}
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = ARG
+						is_core = BOL
+					}
+				}
+				add_core = VRP
+				secede_province = VRP
+			}
+			create_vassal = VRP
+			relation = { who = USA value = -40 }
+			set_country_flag = vrp_established
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+   
