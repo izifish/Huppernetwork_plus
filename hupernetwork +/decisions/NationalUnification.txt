@@ -187,15 +187,12 @@ political_decisions = {
 		}	
 		allow = {
 			war = no
-			NGF = {
-				OR = {
-					owned_by = THIS
-					owner = {
-						OR = {
+					NGF = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
 							in_sphere = THIS
-							overlord = {
-								tag = THIS
-							}
 						}
 					}
 				}
