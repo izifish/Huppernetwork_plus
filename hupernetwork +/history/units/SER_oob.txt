@@ -15,6 +15,14 @@ leader = {
 	personality = defence_1.1
 	background = attack_1.1
 }
+leader = {
+	name= "Pinpin el Yugoslavo"
+	picture= moro1
+	type= land
+	date="1836.1.1"
+	personality= defence_4.1
+	background = attack_3.1
+}
 
 army = {
 	name = "Army of the Principality of Serbia"

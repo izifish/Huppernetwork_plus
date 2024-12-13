@@ -64,120 +64,81 @@ ALD = {
 
 leader = {
 	name = "Baldomero Espartero"
-	picture = spa_gen_espartero
+	date = 1833.1.1
 	type = land
-	date="1834.1.1"
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_3.1
 	prestige = 0.1
 }
+
 leader = {
 	name = "Francisco Serrano"
-	picture = spa_gen_serrano
+	date = 1833.1.1
 	type = land
-	date="1833.1.1"
 	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
+	background = attack_2.1
+	prestige = 0.0
 }
-leader = {
-	name = "Ramón María Narváez"
-	picture = spa_gen_narvaez
-	type = land
-	date="1835.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-}
+
 leader = {
 	name = "Leopoldo O'Donnell"
-	picture = spa_gen_odonnell
+	date = 1836.1.1
 	type = land
-	date="1836.1.1"
-	personality = defence_1.1
+	personality = defence_2.1
 	background = attack_1.1
+	prestige = 0.0
 }
+
 leader = {
-	name = "Gerónimo Valdés"
-	picture = spa_gen_valdes
+	name = "Yeriam de Habsburgo"
+	date = 1836.1.1
 	type = land
-	date="1836.1.1"
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_4.1
+	background = attack_4.1
+	prestige = 0.0
+	picture = "pancho4"
 }
+
+leader = {
+	name = "Condor el negro"
+	date = 1836.1.1
+	type = sea
+	personality = defence_3.1
+	background = attack_4.1
+	prestige = 1
+	picture = "pancho7"
+}
+
+leader = {
+	name = "GerÃ³nimo ValdÃ©s"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_1.1
+	prestige = 0.0
+}
+
 leader = {
 	name = "Juan Van Halen"
-	picture = spa_gen_vanhalen
+	date = 1823.1.1
 	type = land
-	date="1823.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Juan Ramón Rodil"
-	picture = spa_gen_rodil
-	type = land
-	date="1824.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Luis Fernández de Córdova"
-	picture = spa_gen_luiscordova
-	type = land
-	date="1833.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-}
-leader = {
-	name = "Gaspar de Jáuregui"
-	picture = spa_gen_jauregui
-	type = land
-	date="1833.1.1"
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_2.1
 	prestige = 0.1
 }
+
 leader = {
-	name = "Francisco Javier de Uriarte"
-	picture = spa_adm_uriarte
-	type = sea
-	date="1802.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "José Primo de Rivera"
-	picture = spa_adm_primorivera
-	type = sea
-	date="1827.1.1"
-	personality = defence_1.1
-	background = attack_1.1
+	name = "JosÃ© RamÃ³n Rodil"
+	date = 1824.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
 	prestige = 0.1
-}
-leader = {
-	name = "Francisco Javier de Ulloa"
-	picture = spa_adm_ulloa
-	type = sea
-	date="1825.1.1"
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Casimiro Vigodet"
-	picture = spa_adm_vigodet
-	type = sea
-	date="1836.1.1"
-	personality = defence_1.1
-	background = attack_1.1
 }
 
 #Army
 army = {
-	name = "Ejército Cristino del Centro"
+	name = "EjÃ©rcito Cristino del Centro"
 	location = 512
 	regiment = {
 		name= "1. Granaderos del Rey"
@@ -198,19 +159,19 @@ army = {
 	}
 
 	regiment = {
-		name= "1. Brigada de Infantería 'El Ramillete'"
+		name= "1. Brigada de InfanterÃ­a 'El Ramillete'"
 		type = infantry
 		home = 503
 	}
 
 	regiment = {
-		name= "2. Brigada de Infantería"
+		name= "2. Brigada de InfanterÃ­a"
 		type = infantry
 		home = 509
 	}
 
 	regiment = {
-		name= "3. Brigada de Infantería"
+		name= "3. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 513
 	}
@@ -241,72 +202,72 @@ army = {
 }
 
 army = {
-	name = "Ejército del Norte"
+	name = "EjÃ©rcito del Norte"
 	location = 509
 	
 	regiment = {
-		name= "4. Brigada de Infantería 'San Jorge'"
+		name= "4. Brigada de InfanterÃ­a 'San Jorge'"
 		type = hussar
 		home = 498
 	}
 
 	regiment = {
-		name= "1. Brigada de Artillería"
+		name= "1. Brigada de ArtillerÃ­a"
 		type = infantry
 		home = 476
 	}
 	
 	regiment = {
-		name= "5. Brigada de Infantería"
+		name= "5. Brigada de InfanterÃ­a"
 		type = infantry
 		home = 482
 	}
 	
 	regiment = {
-		name= "6. Brigada de Infantería 'La Granja'"
+		name= "6. Brigada de InfanterÃ­a 'La Granja'"
 		type = infantry
 		home = 483
 	}
 
 	regiment = {
-		name= "7. Brigada de Infantería"
+		name= "7. Brigada de InfanterÃ­a"
 		type = infantry
 		home = 497
 	}
 
 	regiment = {
-		name= "8. Brigada de Infantería"
+		name= "8. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 512
 	}
 
 	regiment = {
-		name= "9. Brigada de Infantería"
+		name= "9. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 514
 	}
 
 	regiment = {
-		name= "10. Brigada de Infantería"
+		name= "10. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 510
 	}
 
 	regiment = {
-		name= "11. Brigada de Infantería"
+		name= "11. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 516
 	}
 	
 	regiment = {
-		name= "12. Brigada de Infantería"
+		name= "12. Brigada de InfanterÃ­a"
 		type = artillery
 		home = 515
 	}
 }
 
 army = {
-	name = "Ejército de Cuba"
+	name = "EjÃ©rcito de Cuba"
 	location = 511
 	
 	regiment = {
@@ -371,7 +332,7 @@ army = {
 }
 
 navy = {
-	name = "Armada Real Española"
+	name = "Armada Real EspaÃ±ola"
 	location = 512
 	
 	ship = {
@@ -380,7 +341,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Hespérides"
+		name = "HespÃ©rides"
 		type = manowar
 	}
 	
@@ -395,7 +356,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Cristóbal Colón"
+		name = "CristÃ³bal ColÃ³n"
 		type = frigate
 	}
 	
@@ -435,7 +396,7 @@ navy = {
 	}
 	
 	ship = {
-		name = "Nuestra Señora del Patrocinio"
+		name = "Nuestra SeÃ±ora del Patrocinio"
 		type = frigate
 	}
 	
@@ -460,7 +421,7 @@ navy = {
 	}
 
 	ship = {
-		name= "Héroe"
+		name= "HÃ©roe"
 		type = manowar
 	}
 
@@ -510,12 +471,12 @@ navy = {
 	}
 
 	ship = {
-		name= "Nuestra Señora de Asunción"
+		name= "Nuestra SeÃ±ora de AsunciÃ³n"
 		type = frigate
 	}
 
 	ship = {
-		name= "Nuestra Señora de Atocha"
+		name= "Nuestra SeÃ±ora de Atocha"
 		type = frigate
 	}
 

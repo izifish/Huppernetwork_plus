@@ -24,52 +24,68 @@ ALD = {
 
 #Leaders
 leader = {
-	name = "JosÈ Travassos Valdez"
-	picture = por_gen_bonfim
-	date = 1832.1.1
+	name = "Ant√≥nio Jos√© Severim"
+	date = 1836.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.0
 }
+
 leader = {
-	name = "Joao Carlos de Saldanha"
-	picture = por_gen_saldanha
-	date = 1835.1.1
+	name = "Nunes Vidigal"
+	date = 1836.1.1
 	type = land
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_2.1
+	prestige = 0.0
 }
+
 leader = {
-	name = "AntÛnio JosÈ Severim de Noronha"
-	picture = por_gen_terceira
-	date = 1823.1.1
+	name = "Lu√≠s do Rego Barreto"
+	date = 1824.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.2
+	prestige = 0.0
 }
+
 leader = {
-	name = "Francisco Xavier da Silva Pereira"
-	picture = por_gen_antas
-	date = 1834.1.1
+	name = "Vicente de Mesquita"
+	date = 1836.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
-	
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.0
 }
+
 leader = {
-	name = "LuÌs do Rego Barreto"
-	date = 1817.1.1
+	name = "Jo√£o Carlos de Saldanha"
+	date = 1836.1.1
 	type = land
-	personality = defence_1.1
+	personality = defence_2.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0.0
+}
+
+leader = {
+	name = "Ant√≥nio Benedito de Castro"
+	date = 1820.1.1
+	type = sea
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+leader= {
+	name = "Pixel de Braganza"
+	date = 1836.1.1
+	type = land
+	personality = defence_4.1
+	background = attack_2.1
 }
 
 army = {
-	name = "ExÈrcito PortuguÍs"
+	name = "Ex√©rcito Portugu√™s"
 	location = 521
 	regiment = {
 		name= "1. Brigada de Infantaria"
@@ -114,19 +130,19 @@ army = {
 	}
 
 	regiment = {
-		name = "1. Divis„o Colonial"
+		name = "1. Divis√£o Colonial"
 		type = artillery
 		home = 525
 	}
 	
 	regiment = {
-		name = "2. Divis„o Colonial"
+		name = "2. Divis√£o Colonial"
 		type = artillery
 		home = 2134
 	}
 	
 	regiment = {
-		name = "3. Divis„o Colonial"
+		name = "3. Divis√£o Colonial"
 		type = artillery
 		home = 1303
 	}
@@ -141,22 +157,22 @@ navy = {
 	}
 
 	ship = {
-		name= "Dom Jo„o VI "
+		name= "Dom Jo√£o VI "
 		type = manowar
 	}
 
 	ship = {
-		name= "Nossa Senhora da ConceiÁ„o"
+		name= "Nossa Senhora da Concei√ß√£o"
 		type = manowar
 	}
 
 	ship = {
-		name= "S„o Sebasti„o"
+		name= "S√£o Sebasti√£o"
 		type = manowar
 	}
 
 	ship = {
-		name= "AmazÙnia"
+		name= "Amaz√¥nia"
 		type = manowar
 	}
 
@@ -171,7 +187,7 @@ navy = {
 	}
 
 	ship = {
-		name= "PrÌncipe do Brasil"
+		name= "Pr√≠ncipe do Brasil"
 		type = manowar
 	}
 

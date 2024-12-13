@@ -48,32 +48,6 @@ WAL = {
 }
 
 leader = {
-	name = "Mehmet Vesif Pasha"
-	picture = tur_gen_mehmetvesif
-	date = 1830.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
-}
-leader = {
-	name = "Mehmet Namik Pasha"
-	picture = tur_gen_mehmetnamik
-	date = 1832.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-}
-leader = {
-	name = "Halil Rifat Pasha"
-	picture = tur_adm_halilrifat
-	date = 1830.1.1
-	type = sea
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.1
-}
-leader = {
 	name = "Resid Mehmed Pasha"
 	date = 1809.1.1
 	type = land
@@ -81,37 +55,71 @@ leader = {
 	background = attack_1.1
 	prestige = 0.2
 }
+
 leader = {
 	name = "Wojciech Chrzanowski"
-	picture = tur_gen_chrzanowski
 	date = 1836.1.1
 	type = land
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_2.1
+	prestige = 0.1
 }
+
 leader = {
 	name = "Helmuth von Moltke"
-	picture = tur_gen_moltke
 	date = 1833.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.0
 }
+
 leader = {
 	name = "Abdi Pasha"
-	picture = tur_gen_abdi
 	date = 1836.1.1
 	type = land
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_3.1
+	prestige = 0.0
 }
+
+leader = {
+	name = "Senki el novio"
+	date = 1836.1.1
+	type = land
+	personality = defence_4.1
+	background = attack_1.1
+	prestige = 1
+	picture = "pancho14"
+}
+
 leader = {
 	name = "Hafiz Osman Pasha"
 	date = 1836.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
+	prestige = 0.0
 }
+
+leader = {
+	name = "Namik Pasha"
+	date = 1836.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.0
+}
+
+leader = {
+	name = "AbdÃ¼lkerim Pasha"
+	date = 1836.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.0
+}
+
 leader = {
 	name = "Yaver Pasha"
 	date = 1836.1.1
@@ -209,25 +217,25 @@ army = {
 	}
 
 	regiment = {
-		name= "1. Piyade Tümeni"
+		name= "1. Piyade TÃ¼meni"
 		type = infantry
 		home = 871
 	}
 
 	regiment = {
-		name= "2. Piyade Tümeni"
+		name= "2. Piyade TÃ¼meni"
 		type = infantry
 		home = 886
 	}
 
 	regiment = {
-		name= "3. Piyade Tümeni"
+		name= "3. Piyade TÃ¼meni"
 		type = artillery
 		home = 880
 	}
 
 	regiment = {
-		name= "4. Piyade Tümeni"
+		name= "4. Piyade TÃ¼meni"
 		type = artillery
 		home = 868
 	}
@@ -255,25 +263,25 @@ army = {
 	name = "Army of Anatolia"
 	location = 878
 	regiment = {
-		name= "5. Piyade Tümeni"
+		name= "5. Piyade TÃ¼meni"
 		type = hussar
 		home = 882
 	}
 
 	regiment = {
-		name= "6. Piyade Tümeni"
+		name= "6. Piyade TÃ¼meni"
 		type = infantry
 		home = 873
 	}
 
 	regiment = {
-		name= "7. Piyade Tümeni"
+		name= "7. Piyade TÃ¼meni"
 		type = infantry
 		home = 869
 	}
 
 	regiment = {
-		name= "8. Piyade Tümeni"
+		name= "8. Piyade TÃ¼meni"
 		type = infantry
 		home = 863
 	}
@@ -338,19 +346,19 @@ army = {
 	}
 
 	regiment = {
-		name= "9. Piyade Tümeni"
+		name= "9. Piyade TÃ¼meni"
 		type = infantry
 		home = 870
 	}
 
 	regiment = {
-		name= "10. Piyade Tümeni"
+		name= "10. Piyade TÃ¼meni"
 		type = infantry
 		home = 873
 	}
 
 	regiment = {
-		name= "11. Piyade Tümeni"
+		name= "11. Piyade TÃ¼meni"
 		type = artillery
 		home = 878
 	}
@@ -385,19 +393,19 @@ army = {
 	name = "Army of Arabia"
 	location = 1733
 	regiment = {
-		name= "12. Piyade Tümeni"
+		name= "12. Piyade TÃ¼meni"
 		type = hussar
 		home = 893
 	}
 
 	regiment = {
-		name= "13. Piyade Tümeni"
+		name= "13. Piyade TÃ¼meni"
 		type = infantry
 		home = 899
 	}
 
 	regiment = {
-		name= "14. Piyade Tümeni"
+		name= "14. Piyade TÃ¼meni"
 		type = infantry
 		home = 926
 	}
@@ -433,13 +441,13 @@ army = {
 	}
 
 	regiment = {
-		name= "1. Askäris"
+		name= "1. AskÃ¤ris"
 		type = artillery
 		home = 1735
 	}
 
 	regiment = {
-		name= "2. Askäris"
+		name= "2. AskÃ¤ris"
 		type = artillery
 		home = 1734
 	}
