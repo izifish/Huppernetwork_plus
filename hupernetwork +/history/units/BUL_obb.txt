@@ -1,0 +1,9 @@
+leader = {
+  name = "Comico el randy"
+  picture = bulgaro 1
+  date = 1836
+  type = land
+  personality= defence4.1
+  background = ataack5.1
+}
+  
