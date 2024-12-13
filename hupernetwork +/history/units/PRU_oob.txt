@@ -250,157 +250,123 @@ DEN = {
 
 }
 
-leader = {
-	name = "Karl von dem Knesebeck"
-	picture = pru_gen_knesebeck
+leader = 
+{
+	name = "von Zieten"
 	date = 1813.1.1
 	type = land
+	personality = defence_2.1
+	background = attack_3.1
+	prestige = 0.2
+}
+
+leader =
+{
+	name = "Hermann von Boyen"
+	date = 1814.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_2.1
+	prestige = 0
+}
+
+leader = 
+{
+	name = "Wilhelm von Krauseneck"
+	date = 1814.1.1
+	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0
 }
-leader = {
-	name = "Leopold von Boyen"
-	picture = pru_gen_boyen
+
+leader = 
+{
+	name = "Baron von MÃ¼ffling"
 	date = 1813.1.1
 	type = land
-	personality = defence_1.1
+	personality = defence_2.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0
 }
-leader = {
-	name = "Karl von Müffling"
-	picture = pru_gen_mueffling
-	date = 1813.1.1
+
+leader =
+{
+	name = "Jiren von Hindenburg"
+	date = 1836.1.1
+	type = land
+personality = defence_4.1
+	background = attack_4.1
+        picture = "pancho1"
+}
+
+leader =
+{
+	name = "von Grolman"
+	date = 1816.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0
 }
-leader = {
-	name = "Heinrich von Pfuel"
-	picture = pru_gen_pfuel
-	date = 1813.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Karl von Grolman"
-	picture = pru_gen_grolman
-	date = 1815.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Otto Rühle von Lilienstern"
-	picture = pru_gen_lilienstern
+
+leader = 
+{
+	name = "RÃ¼hle von Lilienstern"
 	date = 1819.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.3
+	prestige = 0
 }
-leader = {
-	name = "Prinz Wilhelm"
-	picture = pru_gen_prinzwilhelm
+
+leader =
+{
+	name = "zu Dohna-Schlobitten"
 	date = 1820.1.1
 	type = land
 	personality = defence_1.1
 	background = attack_1.1
-	prestige = 0.2
+	prestige = 0
 }
-leader = {
-	name = "Friedrich zu Dohna-Schlobitten"
-	picture = pru_gen_dohnaschlobitten
-	date = 1822.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Friedrich von Wrangel"
-	picture = pru_gen_wrangel
+
+leader =
+{
+	name = "Heinrich von Wrangel"
 	date = 1823.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_2.1
 	prestige = 0.2
 }
+
 leader = {
-	name = "Prinz Karl"
-	picture = pru_gen_prinzkarl
-	date = 1824.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Wilhelm von Krauseneck"
-	picture = pru_gen_krauseneck
-	date = 1829.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "Peter von Colomb"
-	picture = pru_gen_colombpeter
-	date = 1829.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.2
-}
-leader = {
-	name = "August von Neumann-Cosel"
-	picture = pru_gen_neumanncosel
+	name = "Friedrich Graf von Wrangel"
 	date = 1836.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-}
-leader = {
-	name = "Hans von Zieten"
-	picture = pru_gen_zieten
-	date = 1813.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_3.1
 	prestige = 0.3
 }
-leader = {
-	name = "Ludwig von Borstell"
-	picture = pru_gen_borstell
-	date = 1813.1.1
+
+leader = 
+{
+	name = "Eduard Vogel von Falckenstein"
+	date = 1836.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.1
 }
-leader = {
-	name = "Gustav von Rauch"
-	picture = pru_gen_rauch
-	date = 1815.1.1
+
+leader =
+{
+	name = "Albrecht von Roon"
+	date = 1836.1.1
 	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
-}
-leader = {
-	name = "Prinz August"
-	picture = pru_gen_prinzaugust
-	date = 1808.1.1
-	type = land
-	personality = defence_1.1
-	background = attack_1.1
-	prestige = 0.3
+	personality = defence_2.1
+	background = attack_4.1
+	prestige = 0.2
 }
 
 #Army
@@ -671,7 +637,7 @@ army = {
 }
 
 navy = {
-	name = "Königlich Preußische Marine"
+	name = "KÃ¶niglich PreuÃŸische Marine"
 	location = 690
 	ship = {
 		name= "1. Klipperflottille"
