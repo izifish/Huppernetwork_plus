@@ -69,9 +69,9 @@ political_decisions = {
 		
 		effect = {
 			2344 = {
-				change_province_name = "Montevideu"
+				change_province_name = "Ciplatina"
 				state_scope = {
-					change_region_name = "Cisplatina"
+					change_region_name = "Montevideu"
 				}
 			}
 			URU = { all_core = { add_core = THIS } }
@@ -176,9 +176,9 @@ political_decisions = {
 		
 		effect = {
 			2344 = {
-				change_province_name = "Montevideo"
+				change_province_name = "Uruguay"
 				state_scope = {
-					change_region_name = "Uruguay"
+					change_region_name = "Montevideo"
 				}
 			}
 			URU = { all_core = { remove_core = BRZ } }
