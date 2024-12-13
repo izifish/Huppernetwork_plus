@@ -1,0 +1,227 @@
+country_event = {
+	id = 776410
+	title = "776405"
+	desc = "EVTDESC776405"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = GHO
+		NOT = { has_country_flag = indian_economic_compensation }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "EVTOPTA776405"
+		set_country_flag = indian_economic_compensation
+		any_country = {	
+			any_owned = {
+				limit = {
+					continent = india
+				}
+				any_pop = {
+						reduce_pop = 0.50
+				}
+			}
+		}
+		LOM = {
+				set_global_flag = austira_influence
+			}
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}
+
+country_event = {
+	id = 900
+	title = "776405"
+	desc = "EVTDESC776405"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = GHO
+		NOT = { has_country_flag = indian_economic_compensationn }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "EVTOPTA776405"
+		set_country_flag = indian_economic_compensationn
+		LOM = {
+				set_global_flag = austira_influence
+			}
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}
+
+country_event = {
+	id = 776405
+	title = "776405"
+	desc = "EVTDESC776405"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = GHO
+		NOT = { has_country_flag = chinese_economic_compensation }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "EVTOPTA776405"
+		set_country_flag = chinese_economic_compensation
+		any_country = {	
+			any_owned = {
+				limit = {
+					is_core = CHI
+					NOT = { province_id = 1485 }
+					NOT = { province_id = 2562 }
+					NOT = { province_id = 1499 }
+					NOT = { province_id = 3249 }
+					NOT = { province_id = 1496 }
+					NOT = { province_id = 1498 }
+					NOT = { province_id = 1608 }
+					NOT = { province_id = 1606 }
+					NOT = { province_id = 1538 }
+					NOT = { province_id = 1566 }
+					NOT = { province_id = 1569 }
+					NOT = { province_id = 1481 }
+					NOT = { province_id = 1612 }
+					NOT = { province_id = 1618 }
+					NOT = { province_id = 1615 }
+					NOT = { province_id = 1617 }
+					NOT = { province_id = 1570 }
+					NOT = { province_id = 1616 }
+					NOT = { province_id = 1613 }
+					NOT = { is_core = MCK }
+					NOT = { is_core = MGL }
+					NOT = { is_core = TIB }
+					NOT = { is_core = XIN }
+				}
+				any_pop = {
+						reduce_pop = 0.10
+						CHI = {
+				add_country_modifier = {
+                        name = china_mobilization_nerf_0
+                        duration = -1
+                }
+			}
+				}
+			}	
+		}
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}
+
+country_event = {
+	id = 15
+	title = "Centralize the empire"
+	desc = "Now to centralize the empire"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = CHI
+        year = 1860
+		war = no
+		NOT = { has_country_flag = chineseee }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "For the emperor"
+				inherit = MCK
+				inherit = MGL
+				inherit = TIB
+				inherit = XIN
+				set_country_flag = chineseee
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}
+
+country_event = {
+	id = 72
+	title = "debuff"
+	desc = "debuff"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = CHI
+		NOT = { has_country_flag = debuff }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "debuff"
+				CHI = {
+				add_country_modifier = {
+                        name = china_mobilization_nerf_0
+                        duration = -1
+                }
+			}
+				set_country_flag =  debuff
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}
+country_event = {
+	id = 77
+	title = "debuff"
+	desc = "debuff"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = GHO
+		NIT = {
+				has_global_flag = austira_influence
+			}
+		exists = LOM
+		exists = NIT
+		NOT = {
+				LOM = {
+				capital = 726
+			}
+			}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "debuff"
+		NIT = {
+				inherit = LOM
+			}
+				
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}

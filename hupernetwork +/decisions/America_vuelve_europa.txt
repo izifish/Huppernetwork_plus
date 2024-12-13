@@ -1,0 +1,76 @@
+political_decisions = {
+	brazil_conoliza_portugal = {
+		picture = patagonian_expedition
+		potential = {
+			tag = BRZ
+			NOT = {
+				has_country_flag = accepta_portugeses
+			}
+		}
+		
+		allow = {
+			POR = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 40
+			set_country_flag = accepta_portugeses
+			add_accepted_culture = portuguese
+			POR = { all_core = { add_core = BRZ } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	americohispanos_europa = {
+		picture = patagonian_expedition
+		potential = {
+			OR = {
+			    tag = URU
+				tag = ARG
+				tag = CHL
+				tag = BOL
+				tag = PEU
+				tag = ECU
+				tag = CLM
+				tag = VNZ
+				tag = UCA
+				tag = MEX
+				tag = GCO
+				tag = PBC
+			}
+			NOT = {
+				has_country_flag = accepta_espanol
+			}
+		}
+		
+		allow = {
+			owns = 476
+			owns = 477
+			owns = 487
+			owns = 511
+		}
+		
+		effect = {
+			prestige = 40
+			set_country_flag = accepta_espanol
+			add_accepted_culture = spanish
+			add_accepted_culture = catalan
+			add_accepted_culture = basque
+			SPA = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

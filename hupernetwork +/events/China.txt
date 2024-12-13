@@ -1,0 +1,424 @@
+country_event = {
+	title = "EVTNAME90900"
+	desc = "EVTDESC90900"
+	picture = "Celebration"
+
+	id = 90900
+	news = yes
+	news_desc_long = "EVTDESC90900_NEWS_LONG"
+	news_desc_medium = "EVTDESC90900_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90900_NEWS_SHORT"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = CHI
+		NOT = { has_global_flag = the_dragon_wakes }
+		}
+
+	option = {				
+		name = "EVTOPTA90900"
+		set_global_flag = the_dragon_wakes
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				substate_of = CHI
+#				num_of_cities = 1
+			}
+			country_event = { id=90901 days=0 }
+		}
+		prestige = 10
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+	}
+}
+
+# Event to Inherit
+country_event = {
+	id = 90901
+	title = "EVTNAME90900"
+	desc = "EVTDESC90901"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90901"
+		civilized = yes
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1000
+			 modifier = {
+				factor = 1000
+				relation = { who = FROM value = 100 }
+			} 
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90100"
+		ai_chance = {
+			factor = 100
+		}
+		prestige = 10
+		relation = {
+			who = FROM
+			value = -200
+		}
+		civilized = yes
+		release_vassal = THIS
+		leave_alliance = CHI
+	}
+}
+
+# Event to reject
+country_event = {
+	id = 90902 #The Breakup of China
+	news = yes
+	news_desc_long = "EVTDESC90902_NEWS_LONG"
+	news_desc_medium = "EVTDESC90902_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90902_NEWS_SHORT"
+	
+	title = "EVTNAME90902"
+	desc = "EVTDESC90902"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90902"
+		release_vassal = THIS
+		leave_alliance = CHI
+		civilized = yes
+	}
+}
+
+country_event = {
+	title = "westernize_nation_title"
+	desc = "westernize_nation_desc"
+	picture = "Celebration"
+
+	id = 90903
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = the_dragon_wakes }
+		OR = { 
+		tag = GXI
+		tag = MCK
+		tag = XIN
+		tag = YNN
+		tag = XBI
+		tag = MGL
+		tag = TIB
+		}
+		}
+
+	option = {				
+		name = "EVTOPTA90902"
+		set_global_flag = the_dragon_wakes
+		release_vassal = THIS
+		leave_alliance = CHI
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				substate_of = CHI
+				num_of_cities = 1
+			}
+			country_event = { id=90902 days=0 }
+		}
+		CHI = {
+			country_event = { id=90904 days=0 }
+		}
+		prestige = 10
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+	}
+}
+
+country_event = {
+	id = 90904
+	title = "EVTNAME90902"
+	desc = "EVTDESC90902"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1880
+		 tag = CHI
+		 NOT = { has_country_flag = chineseeee }
+		}
+
+	option = {
+		name = "EVTOPTA90902"
+		civilized = yes
+		set_country_flag = chineseeee
+		add_country_modifier = {
+                        name = china_mobilization_nerff
+                        duration = -1
+                }
+	}
+}
+
+country_event = {
+	id = 16
+	title = "TECH"
+	desc = "Choose a tech"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1836
+		 tag = CHI
+		 NOT = { has_country_flag = tech1 }
+		}
+
+	option = {
+		name = "Post napoleonic thought"
+		activate_technology = post_napoleonic_thought 
+		set_country_flag = tech1
+	}
+	option = {
+		name = "Flintlock rifles"
+		activate_technology = flintlock_rifles
+		set_country_flag = tech1
+	}
+	option = {
+		name = "Military staff system"
+		activate_technology = military_staff_system
+		set_country_flag = tech1
+	}
+	option = {
+		name = "Army command principle"
+		activate_technology = army_command_principle
+		set_country_flag = tech1
+	}
+}
+
+country_event = {
+	id = 18
+	title = "TECH"
+	desc = "Choose a tech"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1845
+		 tag = CHI
+		 NOT = { has_country_flag = tech3 }
+		}
+
+	option = {
+		name = "Strategic mobility"
+		activate_technology = post_napoleonic_thought 
+		activate_technology = strategic_mobility
+		set_country_flag = tech3
+	}
+	option = {
+		name = "Muzzle loaded rifles"
+		activate_technology = flintlock_rifles
+		activate_technology = muzzle_loaded_rifles
+		set_country_flag = tech3
+	}
+	option = {
+		name = "Iron muzzle loaded artillery"
+		activate_technology = iron_muzzle_loaded_artillery
+		activate_technology = bronze_muzzle_loaded_artillery
+		set_country_flag = tech3
+	}
+	option = {
+		name = "Military plans"
+		activate_technology = military_staff_system
+		activate_technology = military_plans
+		set_country_flag = tech3
+	}
+	option = {
+		name = "Army professionalism"
+		activate_technology = army_command_principle
+		activate_technology = army_professionalism
+		set_country_flag = tech3
+	}
+}
+
+country_event = {
+	id = 19
+	title = "TECH"
+	desc = "Choose a tech"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1850
+		 tag = CHI
+		 NOT = { has_country_flag = tech4 }
+		}
+
+	option = {
+		name = "Point defense system"
+		activate_technology = post_napoleonic_thought 
+		activate_technology = strategic_mobility
+		activate_technology = point_defense_system
+		set_country_flag = tech4
+	}
+	option = {
+		name = "Breech loaded rifles"
+		activate_technology = flintlock_rifles
+		activate_technology = muzzle_loaded_rifles
+		activate_technology = breech_loaded_rifles
+		set_country_flag = tech4
+	}
+	option = {
+		name = "Iron breech loaded artillery"
+		activate_technology = iron_muzzle_loaded_artillery
+		activate_technology = iron_breech_loaded_artillery
+		activate_technology = iron_breech_loaded_artillery
+		set_country_flag = tech4
+	}
+	option = {
+		name = "Military statistics"
+		activate_technology = military_staff_system
+		activate_technology = military_plans
+		activate_technology = military_statistics
+		set_country_flag = tech4
+	}
+	option = {
+		name = "Army decision making"
+		activate_technology = army_command_principle
+		activate_technology = army_professionalism
+		activate_technology = army_decision_making
+		set_country_flag = tech4
+	}
+}
+
+country_event = {
+	id = 20
+	title = "TECH"
+	desc = "Choose a tech"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1860
+		 tag = CHI
+		 NOT = { has_country_flag = tech5 }
+		}
+
+	option = {
+		name = "Enlightenment thought"
+		activate_technology = enlightenment_thought
+		set_country_flag = tech5
+	}
+	option = {
+		name = "Experimental railroad"
+		activate_technology = experimental_railroad
+		set_country_flag = tech5
+	}
+	option = {
+		name = "Basic chemistry"
+		activate_technology = basic_chemistry
+		set_country_flag = tech5
+	}
+}
+
+country_event = {
+	id = 21
+	title = "TECH"
+	desc = "Choose a tech"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1875
+		 tag = CHI
+		 NOT = { has_country_flag = tech6 }
+		}
+
+	option = {
+		name = "Deep defense system"
+		activate_technology = post_napoleonic_thought 
+		activate_technology = strategic_mobility
+		activate_technology = point_defense_system
+		activate_technology = deep_defense_system
+		set_country_flag = tech6
+	}
+	option = {
+		name = "Machine guns"
+		activate_technology = flintlock_rifles
+		activate_technology = muzzle_loaded_rifles
+		activate_technology = breech_loaded_rifles
+		activate_technology = machine_guns
+		set_country_flag = tech6
+	}
+	option = {
+		name = "Steel breech loaded artillery"
+		activate_technology = iron_muzzle_loaded_artillery
+		activate_technology = iron_breech_loaded_artillery
+		activate_technology = iron_breech_loaded_artillery
+		activate_technology = steel_breech_loaded_artillery
+		set_country_flag = tech6
+	}
+	option = {
+		name = "Military_logistics"
+		activate_technology = military_staff_system
+		activate_technology = military_plans
+		activate_technology = military_statistics
+		activate_technology = military_logistics
+		set_country_flag = tech6
+	}
+	option = {
+		name = "Army risk management"
+		activate_technology = army_command_principle
+		activate_technology = army_professionalism
+		activate_technology = army_decision_making
+		activate_technology = army_risk_management
+		set_country_flag = tech6
+	}
+}
+
+country_event = {
+	id = 17
+	title = "TECH"
+	desc = "Artillery"
+	picture = "Celebration"
+
+	trigger = {
+		 year = 1840
+		 tag = CHI
+		 NOT = { has_country_flag = tech2 }
+		}
+
+	option = {
+		name = "Artillery"
+		activate_technology = bronze_muzzle_loaded_artillery
+		set_country_flag = tech2
+	}
+}

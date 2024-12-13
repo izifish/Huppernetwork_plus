@@ -1,0 +1,88 @@
+country_event = {
+	id = 533403
+	title = "EVTNAME533403" 
+	desc = "EVTDESC533403"
+	picture = "Nationalism"
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = "EVTOPTA533403"
+		any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = SGF
+			}
+			change_tag = SGF
+    }
+	option = {
+        name = "EVTOPTB533403"
+		prestige = 10
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = BAV
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						culture = south_german
+						province_id = 412
+					}
+					is_core = GER
+					NOT = {
+						is_core = AUS
+					}
+				}
+				add_core = SGF
+			}
+			BAV = {
+			change_tag = SGF
+			}
+			create_vassal = SGF
+			diplomatic_influence = {
+				who = SGF
+				value = 300
+			}
+			594 = { secede_province = BAV }
+    }
+}
+
+country_event = {
+	id = 533404
+	title = "EVTNAME533404" 
+	desc = "EVTDESC533404"
+	picture = "Nationalism"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    tag = XXX
+	}
+	
+	option = {
+        name = "EVTOPTA533404"
+		SGF = {
+				all_core = {
+					remove_core = SGF
+				}
+			}
+			change_tag = AUS
+    }
+}

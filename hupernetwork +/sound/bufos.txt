@@ -1,0 +1,31 @@
+country_event = {
+	id = 2
+	trigger = {
+	       NOT = {
+			   has_country_flag = latinos_popp
+		   }
+		     OR = {
+		       capital_scope = { continent = south_america }
+			   AND = {
+			       capital_scope = { continent = north_america }
+				   NOT = {tag = USA}
+				   NOT = {tag = COM}
+			   }
+		   }
+	   }
+	mean_time_to_happen = {
+		days = 1
+	}
+	title = "A New General Arrives"
+	desc = "A Siamese prince, general, and historian who served as first Commander-in-Chief of the Royal Siamese Army from 1887 to 1890 and subsequently the most important Minister in the government of King Chulalongkorn."
+	immediate = {
+		add_country_modifier = {
+                        name = latinos_pop
+                        duration = 1460
+                }
+	}
+	option = {
+		name = "He will be a great asset to our forces"		
+		set_country_flag = latinos_popp
+	}
+}

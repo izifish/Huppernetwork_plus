@@ -1,0 +1,46 @@
+political_decisions = {
+	form_iberia = {
+		potential = {
+			OR = {
+				tag = SPA
+				tag = POR
+				tag = SPC
+			}
+			NOT = {
+				has_country_flag = portugal_españa
+			}
+			ai = no
+		}
+		
+		allow = {
+			war = no
+			SPA = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS						
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+			owns = 521
+			owns = 520
+			owns = 525
+		}
+		
+		effect = {
+			prestige = 25
+			set_country_flag = portugal_españa
+			add_accepted_culture = portuguese
+			add_accepted_culture = spanish
+			add_accepted_culture = catalan
+			add_accepted_culture = basque
+			POR = { all_core = { add_core = THIS } }
+			SPA = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

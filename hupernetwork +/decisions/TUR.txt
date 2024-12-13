@@ -1,0 +1,98 @@
+political_decisions = {
+	tanzimat_reforms = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = tanzimat_reforms_enacted
+			}
+		}
+		
+		allow = {
+			ideological_thought = 1
+		}
+		
+		effect = {
+			set_country_flag = tanzimat_reforms_enacted
+			social_reform = low_schools
+			add_country_modifier = {
+				name = tanzimat_era
+				duration = 14000
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+			}
+		}
+	}
+
+	kanun_i_esasi = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = kanun_i_esasi_here
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -3
+				consciousness = 2
+			}
+			prestige = 20
+			set_country_flag = kanun_i_esasi_here
+			add_country_modifier = {
+				name = kanun_i_esasi
+				duration = 14000
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					average_militancy = 1
+				}
+			}
+		}
+	}
+	
+	the_holy_city = {
+		potential = {
+			1151 = {
+				NOT = { has_province_modifier = holy_city }
+			}
+			OR = {
+				is_culture_group = arab	
+				is_culture_group = turko_semitic
+				is_culture_group = iranian_turanian
+			}
+		}
+		
+		allow = {
+			owns = 1151
+		}
+		
+		effect = {
+			1151 = {
+				add_province_modifier = {
+					name = holy_city
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
