@@ -484,6 +484,8 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -493,6 +495,8 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -502,6 +506,8 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -511,6 +517,8 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -519,7 +527,9 @@ political_decisions = {
             LUC = {
 				all_core = {
 				    owner = {
-					    OR = {				
+					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -529,6 +539,8 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
@@ -538,12 +550,13 @@ political_decisions = {
 				all_core = {
 				    owner = {
 					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
 						    tag = THIS
 						}
 					}
 				}
-			}
-            owns = 726			
+			}	
 		}
 		
 		effect = {
@@ -574,6 +587,13 @@ political_decisions = {
 				limit = {
 					is_culture_group = italian
 					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					  vassal_of = THIS
 				}
 				country_event = { id=11101 days=0 }
 			}
@@ -684,8 +704,7 @@ political_decisions = {
 						}
 					}
 				}
-			}
-            owns = 594			
+			}	
 		}
 		
 		effect = {
@@ -719,6 +738,13 @@ political_decisions = {
 				limit = {
 					is_culture_group = italian
 					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					  vassal_of = THIS
 				}
 				country_event = { id=11101 days=0 }
 			}
