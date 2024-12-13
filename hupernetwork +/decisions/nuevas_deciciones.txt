@@ -682,7 +682,7 @@ aragoitaly = {
 				    add_core = SPA
 				}
 			}
-			BEL = {
+			TUS = {
 				all_core = {
 				    add_core = SPA
 				}
