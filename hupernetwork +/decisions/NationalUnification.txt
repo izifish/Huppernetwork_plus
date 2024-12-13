@@ -187,42 +187,15 @@ political_decisions = {
 		}	
 		allow = {
 			war = no
-			GER = {
-				all_core = {
-					OR = {
+			NGF = {
+				OR = {
+					owned_by = THIS
+					owner = {
 						OR = {
-							owned_by = THIS
-							province_id = 574
-							province_id = 583
-							province_id = 553
-							province_id = 549
-							province_id = 692
-							province_id = 693
-							province_id = 544
-							province_id = 530
-							province_id = 528
-							province_id = 369
-							province_id = 370
-							province_id = 534
-							province_id = 539
-							province_id = 540
-							province_id = 585
-							province_id = 565
-							province_id = 564
-							province_id = 2560
-							province_id = 566
-							province_id = 555
-							province_id = 562
-							province_id = 563
-							province_id = 561
-							province_id = 558
-							province_id = 682
-							owner = {
-								in_sphere = THIS
+							in_sphere = THIS
+							overlord = {
+								tag = THIS
 							}
-						}
-						NOT = {
-							culture = north_german
 						}
 					}
 				}
