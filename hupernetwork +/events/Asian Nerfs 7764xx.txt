@@ -225,3 +225,36 @@ country_event = {
 		name = "Thanks!"
 	}
 }
+
+country_event = {
+	id = 87
+	title = "87"
+	desc = "87"
+	picture = "xinhai"
+	
+	trigger = {
+		tag = GHO
+		NOT = { has_country_flag = core_ngf }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		name = "EVTOPTA776405"
+		set_country_flag = core_ngf
+		any_country = {
+				limit = {
+					primary_culture = north_german
+				}
+				all_core = {
+					add_core = NGF
+				}
+			}
+	}
+	
+	option = {
+		name = "Thanks!"
+	}
+}

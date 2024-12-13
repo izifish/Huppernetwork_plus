@@ -2151,6 +2151,7 @@ free_peoples = {
 							tag = ITA
 							tag = YUG
 							tag = ROM
+							tag = NGF
 							tag = CZH
 						}
 					}
@@ -2238,7 +2239,7 @@ free_peoples_tiny = {
 			NOT = { OR = { tag = TIN tag = SMA tag = MED tag = LRG tag = HUG } }
 			OR = {
 				exists = yes
-				NOT = { OR = { tag = GER tag = SCA tag = ITA tag = AIT tag = YUG tag = ROM tag = CZH tag = PLC } }
+				NOT = { OR = { tag = GER tag = NGF tag = SCA tag = ITA tag = AIT tag = YUG tag = ROM tag = CZH tag = PLC } }
 			}
 		}
 		
@@ -2320,7 +2321,7 @@ free_peoples_small = {
 			NOT = { OR = { tag = TIN tag = SMA tag = MED tag = LRG tag = HUG } }
 			OR = {
 				exists = yes
-				NOT = { OR = { tag = GER tag = SCA tag = ITA tag = AIT tag = YUG tag = ROM tag = CZH tag = PLC } }
+				NOT = { OR = { 	tag = NGF tag = GER tag = SCA tag = ITA tag = AIT tag = YUG tag = ROM tag = CZH tag = PLC } }
 			}
 		}
 		
@@ -2377,7 +2378,7 @@ free_peoples_medium = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { tag = LCT tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
+		NOT = { tag = LCT tag = NGF tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
@@ -2459,7 +2460,7 @@ free_peoples_large = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { tag = LCT tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
+		NOT = { tag = LCT tag = NGF tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
@@ -2541,7 +2542,7 @@ free_peoples_huge = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { tag = LCT tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
+		NOT = { tag = LCT tag = NGF tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
 		THIS = {
 			NOT = { has_country_flag = conquerable_1865 }
 		}
@@ -2676,6 +2677,7 @@ liberate_country = {
 							tag = AUS
 							tag = PLC
 							tag = RUT
+							tag = NGF
 						}
 					}
 				}
