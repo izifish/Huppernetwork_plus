@@ -7,6 +7,15 @@ leader = {
 	background = attack_1.1
 }
 
+leader = {
+	name= "Maximiliano von Oten"
+	picture= cisplatina1
+	date= 1830.1.1
+	type = land
+	personality = defence_-1.1
+	background = attack_3.1
+
+
 army = {
 	name = "Braunschweigische Armee"
 	location = 536
