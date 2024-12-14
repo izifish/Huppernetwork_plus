@@ -1524,6 +1524,113 @@ aragoitaly = {
 		}
 		}
 
+irazamin = {
+    picture = persian_empire
+	    potential = {
+		    OR={
+			tag = KHI
+			tag = BUK
+			tag = KOK
+			}
+			NOT = {
+				has_country_flag = persian_manifest_destinityyy
+			}
+		}
+		allow = {
+			war = no
+			KHI = {
+			    all_core = {
+				    owner = {
+					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
+						    tag = THIS
+						}
+					}
+				}
+			}
+			BUK = {
+			    all_core = {
+				    owner = {
+					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
+						    tag = THIS
+						}
+					}
+				}
+			}
+			KOK = {
+			    all_core = {
+				    owner = {
+					    OR = {
+						    in_sphere = THIS
+						    vassal_of = THIS
+						    tag = THIS
+						}
+					}
+				}
+			}
+		    #
+		}
+		effect = {
+		    #
+			prestige = 35
+			set_country_flag = persian_manifest_destinityy
+		    add_accepted_culture = indo_aryan
+            add_accepted_culture = aryan				
+            KAL = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            MAK = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            BUK = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            AFG = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            KHI = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+			PNJ = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            ARM = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
+            SIN = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}				
+			RUS_1102 = {add_core = PRC}
+			TUR_923 = {add_core = PRC}
+			TUR_931 = {add_core = PRC}
+			TUR_935 = {add_core = PRC}
+			TUR_885 = {add_core = PRC}
+			TUR_884 = {add_core = PRC}
+			EGY_897 = {add_core = PRC}
+			EGY_903 = {add_core = PRC}
+			TUR_889 = {add_core = PRC}
+		}
+	}
+
 form_persianempire = {
     picture = persian_empire
 	    potential = {
@@ -1625,7 +1732,12 @@ form_persianempire = {
 			    all_core = {
 				   add_core = PER
 				}
-			}			
+			}	
+            ARM = {
+			    all_core = {
+				   add_core = PER
+				}
+			}				
 			RUS_1102 = {add_core = PER}
 			TUR_923 = {add_core = PER}
 			TUR_931 = {add_core = PER}
