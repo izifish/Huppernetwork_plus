@@ -1575,6 +1575,7 @@ irazamin = {
 		}
 		effect = {
 		    #
+			change_tag = PRC
 			prestige = 35
 			set_country_flag = persian_manifest_destinityy
 		    add_accepted_culture = indo_aryan
@@ -1584,8 +1585,16 @@ irazamin = {
 				   add_core = PRC
 				}
 			}
+			inherit = KOK
+			inherit = BUK
+			inherit = KHI
 			PER = {
 			    country_event = { id=7764101 days=0 }
+			}
+			PER = {
+			    all_core = {
+				   add_core = PRC
+				}
 			}
             MAK = {
 			    all_core = {

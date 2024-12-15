@@ -271,7 +271,7 @@ country_event = {
 	option = {
 		name = "YES!"
 		PRC = {
-				inherit = VNZ
+				inherit = PER
 			}
 		ai_chance = {
 			factor = 1
