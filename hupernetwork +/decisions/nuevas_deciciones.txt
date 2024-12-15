@@ -1596,6 +1596,11 @@ irazamin = {
 				   add_core = PRC
 				}
 			}
+			KOK = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
             MAK = {
 			    all_core = {
 				   add_core = PRC
