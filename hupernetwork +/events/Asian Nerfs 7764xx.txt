@@ -272,6 +272,14 @@ country_event = {
 		name = "YES!"
 		PRC = {
 				inherit = PER
+				inherit = KOK
+			inherit = BUK
+			inherit = KHI
+			}
+		PER = {
+			    all_core = {
+				   add_core = PRC
+				}
 			}
 		ai_chance = {
 			factor = 1
@@ -279,6 +287,16 @@ country_event = {
 	}
 	option = {
 		name = "NEVER!"
+			PRC = {
+				inherit = KOK
+			inherit = BUK
+			inherit = KHI
+			}
+		PER = {
+			    all_core = {
+				   add_core = PRC
+				}
+			}
      ai_chance = {
 			factor = 0
 		}
