@@ -1584,6 +1584,9 @@ irazamin = {
 				   add_core = PRC
 				}
 			}
+			PER = {
+			    country_event = { id=7764101 days=0 }
+			}
             MAK = {
 			    all_core = {
 				   add_core = PRC

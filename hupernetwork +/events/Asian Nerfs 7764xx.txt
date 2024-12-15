@@ -258,3 +258,29 @@ country_event = {
 		name = "Thanks!"
 	}
 }
+
+country_event = {
+	id = 7764101
+	title = "Union of Irazamin"
+	desc = "Union of Irazamin"
+	
+	trigger = {
+		tag = XXX
+	}
+	
+	option = {
+		name = "YES!"
+		PRC = {
+				inherit = VNZ
+			}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "NEVER!"
+     ai_chance = {
+			factor = 0
+		}
+	}
+}
