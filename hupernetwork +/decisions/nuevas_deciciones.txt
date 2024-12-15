@@ -1577,7 +1577,7 @@ irazamin = {
 		    #
 			change_tag = PRC
 			prestige = 35
-			set_country_flag = persian_manifest_destinityy
+			set_country_flag = persian_manifest_destinityyy
 		    add_accepted_culture = indo_aryan
             add_accepted_culture = aryan				
             KAL = {
