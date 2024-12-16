@@ -1382,6 +1382,111 @@ aragoitaly = {
             add_accepted_culture = wallonian
 		}
 	}
+	arabian_path_PER = {
+	    picture = arabian_flag
+	    potential = {
+		    NOT = {
+				has_country_flag = persian_manifest_destinityy
+			}
+			NOT = {
+				has_global_flag = arabian_path_PER
+			}
+		    OR={tag = PER}
+		}
+		allow = {
+			PER =  {
+			    all_core = {
+				    owner = {
+					    tag = THIS
+					}
+				}
+			}
+			owns = 1156
+			owns = 1166
+			owns = 1169
+			owns = 1177
+			owns = 1150
+		}
+		effect = {		
+            prestige = 40
+		any_country = {
+		    limit = {
+			    is_culture_group = arab
+				OR = {
+				    in_sphere = PER
+				    vassal_of = PER
+				}
+			}
+			annex_to = PER
+		}
+			add_accepted_culture = mashriqi
+			add_accepted_culture = bedouin
+			add_accepted_culture = misri
+			add_accepted_culture = maghrebi	
+			any_country = {
+				limit = {
+					is_culture_group = arab
+				}
+				all_core = {
+					add_core = PER
+				}
+			}
+			any_country = {
+				limit = {
+					is_culture_group = arab
+					OR = {
+					    vassal_of = THIS
+					    in_sphere = THIS
+					}
+				}
+				country_event = { id=11101 days=0 }
+			}
+			YEM = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			IRQ = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			NEJ = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			TRI = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			EGY = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			ABU = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			HDJ = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			OMA = {
+				all_core = {
+					add_core = THIS
+				}
+            }
+			set_global_flag = arabian_path_PER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	accept_morearabs = {
 	    picture = arabian_flag
 	    potential = {
@@ -1654,6 +1759,9 @@ form_persianempire = {
 		    tag = PER
 			NOT = {
 				has_country_flag = persian_manifest_destinityy
+			}
+			NOT = {
+				has_global_flag = arabian_path_PER
 			}
 		}
 		allow = {
