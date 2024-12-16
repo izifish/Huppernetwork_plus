@@ -16,62 +16,37 @@ political_decisions = {
 		effect = {
 		    #
 			set_global_flag = french_formed
-			change_tag = EMF
-			
-		    FRA = {
-		        all_core = {
-			        remove_core = FRA
-				    add_core = EMF
-			    }
-		    }
 			LUX = {
 			    all_core = {
-				    add_core = EMF
+				    add_core = FRA
 				}
 			}
 			WLL = {
 			    all_core = {
-				    add_core = EMF
+				    add_core = FRA
 				}
 			}
 			SWI_605 = {
-				    add_core = EMF
+				    add_core = FRA
 			}
 			SPA_498 = {
-				    add_core = EMF
+				    add_core = FRA
 			}
 			465 = {
-				    add_core = EMF
+				    add_core = FRA
 			}
 			466 = {
-				    add_core = EMF
+				    add_core = FRA
 			}
 			472 = {
-				    add_core = EMF
+				    add_core = FRA
 			}
-		}
-	}
-	annex_luxembourg = {
-	    picture = luxembourg
-	    potential = {
-		    tag = EMF
-			exists=LUX
-		}
-		allow = {
-			war = no
-			prestige = 50
-			LUX = {in_sphere=THIS}
-		    #
-		}
-		effect = {
-		    prestige = 13
-		    inherit = LUX
 		}
 	}
 	french_puppet_spain = {
 	    picture = spanish_empireflag
 	    potential = {
-		    tag = EMF
+		    tag = FRA
 			NOT={has_global_flag=french_puppet_spain}
 			OR = {
 			    exists = IBE
@@ -109,7 +84,7 @@ political_decisions = {
 	french_italianconquest = {
 	    picture = form_italy
 	    potential = {
-		    tag = EMF
+		    tag = FRA
 			NOT={has_global_flag=french_italianconquest}
 		}
 		allow = {
@@ -141,7 +116,7 @@ political_decisions = {
 	french_switzconquest = {
 	    picture = switzerland_french
 	    potential = {
-		    tag = EMF
+		    tag = FRA
 			NOT={has_global_flag=french_switzconquest}
 		}
 		allow = {
@@ -159,7 +134,7 @@ political_decisions = {
 	french_go_against_pope = {
 	    picture = form_italy
 	    potential = {
-		    tag = EMF
+		    tag = FRA
 			has_global_flag=french_italianconquest
 			NOT={has_global_flag=french_go_against_pope}
 		}
