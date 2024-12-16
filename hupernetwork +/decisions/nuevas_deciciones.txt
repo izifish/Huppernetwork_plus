@@ -1126,6 +1126,7 @@ aragoitaly = {
 				has_country_flag = rusia_galicia
 			}
 			has_country_flag = rusia_poland
+			has_country_flag = SLAVIA
 		}
 		
 		allow = {
@@ -2394,6 +2395,104 @@ form_persianempire = {
 			create_vassal = VRP
 			relation = { who = USA value = -40 }
 			set_country_flag = vrp_established
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_slavia = {
+	    picture = slavia
+	    potential = {
+		    #   
+			NOT = {
+			    exists = TNA
+			}
+			OR = {		   
+				tag = RUS
+			}
+			has_country_flag = rusia_galicia
+			has_country_flag = SLAVIA
+		}
+		allow = {
+			war = no
+			PLC = {
+			    all_core = {
+				    owner = {
+					    OR = {
+							vassal_of = THIS
+							tag = THIS
+						}
+					}
+				}
+			}
+			CZH = {
+			    all_core = {
+				    owner = {
+					    OR = {
+							vassal_of = THIS
+							tag = THIS
+						}
+					}
+				}
+			}
+			BYE = {
+			    all_core = {
+				    owner = {
+					    OR = {
+							vassal_of = THIS
+							tag = THIS
+						}
+					}
+				}
+			}
+			RUS = {
+			    all_core = {
+				    owner = {
+					    OR = {
+							vassal_of = THIS
+							tag = THIS
+						}
+					}
+				}
+			}
+		    #
+		}
+		effect = {
+			prestige = 25
+			change_tag = TNA
+			add_accepted_culture = russian
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ukrainian
+			add_accepted_culture = ugrian
+			add_accepted_culture = serb
+			add_accepted_culture = croat
+			add_accepted_culture = bulgarian
+			add_accepted_culture = polish
+			add_accepted_culture = slovene
+			add_accepted_culture = bosniak
+			add_accepted_culture = czech
+			add_accepted_culture = slovak
+			RUS = {
+				    add_core = TNA
+			}
+			PLC = {
+				    add_core = TNA
+			}
+			CZH = {
+			    all_core = {
+				    add_core = TNA
+				}
+			}
+			BYE = {
+			    all_core = {
+				    add_core = TNA
+				}
+			}
+			POL = {
+			    all_core = {
+				    add_core = TNA
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

@@ -505,6 +505,7 @@ country_event = {
 		prestige = 45
 		POL = { all_core = { add_core = RUS } }	
 		set_country_flag = rusia_poland
+		set_country_flag = SLAVIA
 		ai_chance = {factor = 1}
 	}
 	option = {
