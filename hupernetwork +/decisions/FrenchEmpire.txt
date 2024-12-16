@@ -29,6 +29,9 @@ political_decisions = {
 			SWI_605 = {
 				    add_core = FRA
 			}
+			BEL_394 = {
+				    add_core = FRA
+			}
 			SPA_498 = {
 				    add_core = FRA
 			}
@@ -48,6 +51,7 @@ political_decisions = {
 	    potential = {
 		    tag = FRA
 			NOT={has_global_flag=french_puppet_spain}
+			has_global_flag = french_formed
 			OR = {
 			    exists = IBE
 			    exists = SPA
@@ -86,6 +90,7 @@ political_decisions = {
 	    potential = {
 		    tag = FRA
 			NOT={has_global_flag=french_italianconquest}
+			has_global_flag = french_formed
 		}
 		allow = {
 			war = no
@@ -118,6 +123,7 @@ political_decisions = {
 	    potential = {
 		    tag = FRA
 			NOT={has_global_flag=french_switzconquest}
+			has_global_flag = french_formed
 		}
 		allow = {
 			war = no
@@ -136,11 +142,11 @@ political_decisions = {
 	    potential = {
 		    tag = FRA
 			has_global_flag=french_italianconquest
+			has_global_flag = french_formed
 			NOT={has_global_flag=french_go_against_pope}
 		}
 		allow = {
 			war = no
-			prestige = 150
 			465 = {
 				    owned_by = THIS
 			}
