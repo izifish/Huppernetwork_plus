@@ -1913,6 +1913,7 @@ form_persianempire = {
 		}
 		effect = {
 		set_country_flag = ner_bem_ger
+		change_tag = RIN
 			add_accepted_culture = north_german
 			PRU_572 = {add_core = THIS}
 			PRU_581 = {add_core = THIS}
