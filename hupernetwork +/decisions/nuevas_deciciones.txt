@@ -1882,6 +1882,7 @@ form_persianempire = {
 		}
 		effect = {
 		set_country_flag = ner_bem_fra
+		change_tag = BRY
 			add_accepted_culture = french
 			FRA_399 = {add_core = THIS}
 			FRA_404 = {add_core = THIS}

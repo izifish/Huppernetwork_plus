@@ -292,15 +292,6 @@ LIT_communist;Lietuvos Komunistu Partija;;;;;;;;;;;;x
 LIT_fascist;Lietuvos Šauliu Sajunga;;;;;;;;;;;;x
 KAR;Karen;;;;;;;;;;;;x
 KAR_ADJ;Kareni;;;;;;;;;;;;x
-BRY;Buryatia;;;;;;;;;;;;x
-BRY_ADJ;Buryat;;;;;;;;;;;;x
-BRY_conservative;Royal Faction;;;;;;;;;;;;x
-BRY_liberal;The Liberal Faction;;;;;;;;;;;;x
-BRY_reactionary;The Nationalist Faction;;;;;;;;;;;;x
-BRY_anarcho_liberal;The Radical Faction;;;;;;;;;;;;x
-BRY_socialist;The Socialist Faction;;;;;;;;;;;;x
-BRY_communist;The Communist Faction;;;;;;;;;;;;x
-BRY_fascist;The Fascist Faction;;;;;;;;;;;;x
 MLD;Maldives;;;;;;;;;;;;;;;;;;x;;;;
 MLD_ADJ;Maldive;;;;;;;;;;;;;;;;;;x;;;;
 PAK;Pakistan;;;;;;;;;;;;;;;;;;x;;;;
