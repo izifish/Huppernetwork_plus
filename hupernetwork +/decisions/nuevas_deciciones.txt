@@ -2400,6 +2400,53 @@ form_persianempire = {
 			factor = 1
 		}
 	}
+	
+	    form_spanish_commonwealth = {
+	    picture = spanish_commonwealth
+	    potential = {
+		    OR = {
+			    tag = SPA
+			}
+			NOT={has_country_flag = vrp_establishedd}
+		    VOP = {vassal_of = THIS}
+		    VNS = {vassal_of = THIS}
+		    VLP = {vassal_of = THIS}
+		    VNG = {vassal_of = THIS}
+			
+		}
+		allow = {
+		    prestige = 50
+			THIS = {all_core = {is_core = THIS}}
+		}
+		effect = {
+		set_country_flag = vrp_establishedd
+			inherit = VNG
+			inherit = VRP
+			inherit = VNS
+			inherit = VOP
+		    VOP = {all_core = {add_core = THIS}}
+		    VNS = {all_core = {add_core = THIS}}
+		    VRP = {all_core = {add_core = THIS}}
+		    VNG = {all_core = {add_core = THIS}}
+add_accepted_culture = spanish
+add_accepted_culture = catalan
+add_accepted_culture = basque
+add_accepted_culture = mexican
+add_accepted_culture = texan
+add_accepted_culture = afro_caribbean
+add_accepted_culture = afro_caribeno
+add_accepted_culture = central_american
+add_accepted_culture = native_american_minor
+add_accepted_culture = platinean
+add_accepted_culture = patagonian
+add_accepted_culture = south_andean
+add_accepted_culture = north_andean
+VNS = {all_core = {add_core = THIS}}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
 	form_slavia = {
 	    picture = slavia
 	    potential = {
