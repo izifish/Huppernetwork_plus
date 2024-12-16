@@ -1517,6 +1517,9 @@ political_decisions = {
 			NOT = {
     				has_country_flag = rusia_polandD
     			}
+			NOT = {
+    				has_global_flag = make_polish_puppet_rus
+    			}
 		}
 		
 		allow = {
