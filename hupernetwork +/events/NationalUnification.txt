@@ -200,6 +200,14 @@ country_event = {
 	    tag = SIC
 		SAR = {vassal_of = SIC}
 		}
+		AND={
+	    tag = LOM
+		SAR = {vassal_of = LOM}
+		}
+		AND={
+	    tag = LOM
+		SIC = {vassal_of = LOM}
+		}
 		}
 	}
 
