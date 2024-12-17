@@ -11,7 +11,7 @@
     bureaucrats = {
         culture = albanian
         religion = placeholder
-        size = 1750
+        size = 350
     }
 
     officers = {
@@ -41,7 +41,7 @@
     farmers = {
         culture = albanian
         religion = placeholder
-        size = 65450
+        size = 150450
     }
 }
 #Shkoder (408000/102000 POPS)
@@ -55,13 +55,13 @@
     clergymen = {
         culture = albanian
         religion = placeholder
-        size = 975
+        size = 750
     }
 
     artisans = {
         culture = albanian
         religion = placeholder
-        size = 4850
+        size = 4800
     }
 
     soldiers = {
@@ -73,14 +73,9 @@
     farmers = {
         culture = albanian
         religion = placeholder
-        size = 92025
+        size = 115300
     }
 	
-    farmers = {
-        culture = albanian
-        religion = placeholder
-        size = 24725
-    }
 }
 #Durres (120000/30000 POPS)
 851 = {
@@ -111,7 +106,7 @@
     farmers = {
         culture = albanian
         religion = placeholder
-        size = 26525
+        size = 26025
     }
 }
 #Vlore (272000/68000 POPS)
@@ -143,7 +138,7 @@
     farmers = {
         culture = albanian
         religion = placeholder
-        size = 61475
+        size = 110025
     }
 }
 #Epirus Region (168000) #see Greece.txt for balance of region
@@ -159,13 +154,13 @@
     clergymen = {
         culture = albanian
         religion = placeholder
-        size = 475
+        size = 400
     }
 
     artisans = {
         culture = albanian
         religion = placeholder
-        size = 2100
+        size = 1000
     }
 
     soldiers = {
@@ -177,6 +172,24 @@
     farmers = {
         culture = albanian
         religion = placeholder
-        size = 6650
+        size = 29875
+	}
+	clergymen = {
+		culture = greek
+		religion = placeholder
+		size = 125
+	}
+
+	artisans = {
+		culture = greek
+		religion = placeholder
+		size = 1100
+	}
+
+	farmers = {
+		culture = greek
+		religion = placeholder
+		size = 8775
+	}
+
     }
-}
