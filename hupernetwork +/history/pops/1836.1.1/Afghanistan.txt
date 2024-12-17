@@ -5,7 +5,7 @@
 	aristocrats = {
 		culture = aryan
 		religion = placeholder
-		size = 5000
+		size = 5800
 	}
 
 	bureaucrats = {
@@ -29,7 +29,7 @@
 	artisans = {
 		culture = aryan
 		religion = placeholder
-		size = 11100
+		size = 10300
 	}
 
 	soldiers = {
@@ -55,7 +55,7 @@
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 1289
+		size = 1290
 	}
 
 	artisans = {
@@ -67,13 +67,13 @@
 	soldiers = {
 		culture = aryan
 		religion = placeholder
-		size = 1300
+		size = 1400
 	}
 
 	farmers = {
 		culture = aryan
 		religion = placeholder
-		size = 119861
+		size = 119700
 	}
 }
 #Herat (324000/81000 POPS)
@@ -81,19 +81,19 @@
 	aristocrats = {
 		culture = aryan
 		religion = placeholder
-		size = 1575
+		size = 1500
 	}
 
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 813
+		size = 800
 	}
 
 	artisans = {
 		culture = aryan
 		religion = placeholder
-		size = 4050
+		size = 4000
 	}
 
 	soldiers = {
@@ -105,7 +105,7 @@
 	farmers = {
 		culture = aryan
 		religion = placeholder
-		size = 69562
+		size = 69650
 	}
 }
 #Bamyan (412000/103000 POPS)
@@ -113,31 +113,31 @@
 	aristocrats = {
 		culture = aryan
 		religion = placeholder
-		size = 1975
+		size = 1900
 	}
 
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 1001
+		size = 980
 	}
 
 	artisans = {
 		culture = aryan
 		religion = placeholder
-		size = 5100
+		size = 4000
 	}
 
 	soldiers = {
 		culture = aryan
 		religion = placeholder
-		size = 3825
+		size = 3300
 	}
 
 	farmers = {
 		culture = aryan
 		religion = placeholder
-		size = 91399
+		size = 91550
 	}
 }
 #Farrah (464000/116000 POPS)
@@ -145,13 +145,13 @@
 	aristocrats = {
 		culture = aryan
 		religion = placeholder
-		size = 2275
+		size = 2200
 	}
 
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 1163
+		size = 1100
 	}
 
 	artisans = {
@@ -183,13 +183,13 @@
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 938
+		size = 925
 	}
 
 	artisans = {
 		culture = aryan
 		religion = placeholder
-		size = 4575
+		size = 4500
 	}
 
 	soldiers = {
@@ -201,7 +201,7 @@
 	farmers = {
 		culture = aryan
 		religion = placeholder
-		size = 82813
+		size = 82500
 	}
 }
 #Jalalabad (268000/67000 POPS)
@@ -241,38 +241,33 @@
 	aristocrats = {
 		culture = aryan
 		religion = placeholder
-		size = 1550
+		size = 2150
 	}
 
 	clergymen = {
 		culture = aryan
 		religion = placeholder
-		size = 801
+		size = 800
 	}
 
 	artisans = {
 		culture = aryan
 		religion = placeholder
-		size = 4050
+		size = 3400
 	}
 
 	soldiers = {
 		culture = aryan
 		religion = placeholder
-		size = 800
+		size = 675
 	}
 
 	farmers = {
 		culture = aryan
 		religion = placeholder
-		size = 61887
+		size = 84887
 	}
 
-	farmers = {
-		culture = aryan
-		religion = placeholder
-		size = 11912
-	}
 }
 #Badakhshan Region (340000)
 #under the rule of Afghanistan in 1836
