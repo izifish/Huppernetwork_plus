@@ -446,7 +446,7 @@
 	farmers = {
 		culture = maghrebi
 		religion = placeholder
-		size = 37550
+		size = 120312
 	}
 
 	aristocrats = {
@@ -482,7 +482,7 @@
 	farmers = {
 		culture = berber
 		religion = placeholder
-		size = 9250
+		size = 11250
 	}
 
 	artisans = {
@@ -629,7 +629,7 @@
 	bureaucrats = {
 		culture = french
 		religion = placeholder
-		size = 50
+		size = 1050
 	}
 
 	clergymen = {
@@ -728,7 +728,7 @@
 	clergymen = {
 		culture = maghrebi
 		religion = placeholder
-		size = 213
+		size = 2213
 	}
 
 	artisans = {
@@ -740,13 +740,13 @@
 	soldiers = {
 		culture = maghrebi
 		religion = placeholder
-		size = 1100
+		size = 4100
 	}
 
 	farmers = {
 		culture = maghrebi
 		religion = placeholder
-		size = 19312
+		size = 120312
 	}
 
 	aristocrats = {
@@ -1552,8 +1552,8 @@
 	}
 
 	farmers = {
-		culture = afro_asiatic
-		religion = placeholder
+		culture = tuareg
+		religion = sunni
 		size = 1900
 	}
 
