@@ -1552,7 +1552,7 @@
 	}
 
 	farmers = {
-		culture = tuareg
+		culture = afro_asiatic
 		religion = sunni
 		size = 1900
 	}
