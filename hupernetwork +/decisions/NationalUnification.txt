@@ -480,6 +480,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
+		    owns = 726			
 			SAR = {
 				all_core = {
 				    owner = {
@@ -556,7 +557,7 @@ political_decisions = {
 						}
 					}
 				}
-			}	
+			}
 		}
 		
 		effect = {
@@ -1050,7 +1051,6 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			year = 1840
 			SAR = {
 				all_core = {
 					owner = {
@@ -1191,7 +1191,6 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			year = 1840
 			SIC = {
 				all_core = {
 					owner = {
