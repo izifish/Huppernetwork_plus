@@ -160,13 +160,13 @@
 	}
 
 	artisans = {
-		culture = swiss
+		culture = south_german
 		religion = placeholder
 		size = 1900
 	}
 
 	soldiers = {
-		culture = swiss
+		culture = south_german
 		religion = placeholder
 		size = 1100
 	}
