@@ -376,13 +376,13 @@ Tirol Region (556000) #see Italy.txt for balance of Region
 
 	clergymen = {
 		culture = south_german
-		religion = jewish
+		religion = placeholder
 		size = 5 
 	}
 
 	artisans = {
 		culture = south_german
-		religion = jewish
+		religion = placeholder
 		size = 495
 	}
 }
