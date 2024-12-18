@@ -3,181 +3,181 @@
 #Colombo (400000/100000 POPS)
 1321 = {
 	aristocrats = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 800
 	}
 
 	bureaucrats = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 150
 	}
 
 	clergymen = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	artisans = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 800
 	}
 
 	soldiers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	farmers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 67750
 	}
 
 	aristocrats = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 125
 	}
 
 	bureaucrats = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 100
 	}
 
 	clergymen = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 125
 	}
 
 	artisans = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	soldiers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 100
 	}
 
 	labourers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 9800
 	}
 
 	clergymen = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 50
 	}
 
 	artisans = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 500
 	}
 
 	soldiers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 50
 	}
 
 	labourers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 6400
 	}
 
 	clergymen = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	artisans = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	soldiers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	labourers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 1200
 	}
 
 	aristocrats = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	clergymen = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 75
 	}
 
 	artisans = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 1500
 	}
 
 	soldiers = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	labourers = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 3375
 	}
 
 	aristocrats = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	clergymen = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	artisans = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 1100
 	}
 
 	soldiers = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 50
 	}
 
 	farmers = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 1900
 	}
@@ -283,31 +283,31 @@
 #Kandy (304000/76000 POPS)
 1323 = {
 	aristocrats = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	clergymen = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	artisans = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 4000
 	}
 
 	soldiers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	farmers = {
-		culture = indo_aryan
+		culture = dravidian
 		religion = placeholder
 		size = 69250
 	}
@@ -423,55 +423,55 @@
 	}
 
 	clergymen = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	artisans = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 250
 	}
 
 	soldiers = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 50
 	}
 
 	labourers = {
-		culture = malay
+		culture = dravidian
 		religion = placeholder
 		size = 675
 	}
 
 	aristocrats = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	clergymen = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 50
 	}
 
 	artisans = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 750
 	}
 
 	soldiers = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 25
 	}
 
 	labourers = {
-		culture = mashriqi
+		culture = dravidian
 		religion = placeholder
 		size = 2150
 	}
