@@ -1,4 +1,4 @@
-Tirol Region (556000) #see Italy.txt for balance of Region
+#Tirol Region (556000) #see Italy.txt for balance of Region
 #under the rule of Austria in 1836  
 #Innsbruck (236000/59000 POPS)
 612 = {
